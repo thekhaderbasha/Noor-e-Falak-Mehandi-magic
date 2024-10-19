@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor-e-Falak Mehandi Magic</title>
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            transition: all .2s ease-in-out;
+        }
+
+        body {
+            background: #111; /* Dark background for a royal look */
+            color: #eee; /* Light text for contrast */
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: #222; /* Slightly lighter black */
+            color: lightgoldenrodyellow; /* Light gold color */
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 2px -2px gray;
+            z-index: 1000;
+        }
+
+        nav h3 {
+            font-size: 28px;
+            color: lightgoldenrodyellow; /* Light gold color */
+        }
+
+        nav h4 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        nav p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            height: 40px;
+            width: 120px;
+            background: silver; /* Silver background */
+            color: #111; /* Dark text for contrast */
+            font-size: 16px;
+            line-height: 40px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .nav-buttons a:hover,
+        .nav-buttons a.active {
+            background: lightgoldenrodyellow; /* Light gold on hover */
+            color: #222; /* Darker text on hover */
+            transform: translateY(-2px);
+        }
+
+        /* Gallery */
+        .gallery {
+            padding: 20px;
+        }
+
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            height: 350px;
+            width: 250px;
+            overflow: hidden;
+            margin: 20px;
+            border: 15px solid silver; /* Silver border */
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image:hover img {
+            transform: scale(1.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222; /* Darker footer */
+            color: lightgoldenrodyellow; /* Light gold text */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h3>Noor-e-Falak Mehndi Magic</h3>
+        <h4>Designer: Rokha Banu</h4>
+        <p>Contact: +123 456 7890</p>
+        <div class="nav-buttons">
+            <a href="#" class="active" data-filter="all">Home</a>
+            <a href="#" data-filter="ice-cream">Bridal Mehendi</a>
+            <a href="#" data-filter="chocolate">Full Hand</a>
+            <a href="#" data-filter="cake">Half Hand</a>
+            <a href="#" data-filter="juice">Back Hand</a>
+            <a href="#" data-filter="sandwich">Foot</a>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <!-- Bridal Mehendi Images -->
+            <a href="bdm1.jpg" class="image ice-cream">
+                <img src="bdm1.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="images/ice-cream2.jpg" class="image ice-cream">
+                <img src="images/ice-cream2.jpg" alt="Bridal Mehendi">
+            </a>
+
+            <!-- Full Hand Images -->
+            <a href="images/chocolate1.jpg" class="image chocolate">
+                <img src="images/chocolate1.jpg" alt="Full Hand">
+            </a>
+
+            <!-- Half Hand Images -->
+            <a href="images/cake1.jpg" class="image cake">
+                <img src="images/cake1.jpg" alt="Half Hand">
+            </a>
+
+            <!-- Back Hand Images -->
+            <a href="images/juice1.jpg" class="image juice">
+                <img src="images/juice1.jpg" alt="Back Hand">
+            </a>
+
+            <!-- Foot Images -->
+            <a href="images/sandwich1.jpg" class="image sandwich">
+                <img src="images/sandwich1.jpg" alt="Foot">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>All rights reserved by Thi Khadar Basha Creations 2024</p>
+    </footer>
+
+    <!-- jQuery and Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Filter images based on tab
+            $('.nav-buttons a').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                var filter = $(this).attr('data-filter');
+
+                if (filter === 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+            });
+
+            // Magnific popup for fullscreen image view
+            $('.gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

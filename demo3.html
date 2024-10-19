@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor-e-Falak Mehandi Magic</title>
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Emilys+Candy&family=Lavishly+Yours&family=Mea+Culpa&family=Monsieur+La+Doulaise&family=Mrs+Sheppards&family=Neonderthaw&family=Princess+Sofia&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Passions+Conflict&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Niconne&family=Passions+Conflict&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            transition: all .2s ease-in-out;
+        }
+
+        body {
+            background: #000000;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color:#fadf9a;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 0px -2px gray;
+            z-index: 1000;
+        }
+
+        nav h3 {
+            font-size: 22px;
+            font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+
+  text-shadow: 0px 0px 4px #000000;
+  margin-bottom: 1rem;
+        }
+
+        .magic{
+            font-size: 25px;
+            font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+        }
+
+        nav h4 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            
+        }
+        h5 {
+            color: rgb(0, 0, 0);
+            /* text-shadow: 0px 2px 5px black; */
+            font-size: 25px;
+            
+            /* font-family: "Baloo Paaji 2", sans-serif;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        nav p {
+            color: rgb(0, 0, 0);
+            margin-bottom: 10px;
+            font-size: 25px;
+
+            /* font-family: "Baloo Paaji 2", sans-serif;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 4px 0;
+            background: #ffffff;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            height: 40px;
+            width: 100px;
+            background: #ffffff;
+            color: #666;
+            font-size: 16px;
+            line-height: 40px;
+            margin: 10px;
+            border-radius: 5px;
+            /* border: 2px solid #fadf9a; */
+            text-align: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .nav-buttons a:hover,
+        .nav-buttons a.active {
+            background:#fadf9a;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Gallery */
+        .gallery {
+            padding: 20px;
+            background-color:#fadf9a;
+        }
+
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .image {
+            height: 350px;
+            width: 250px;
+            overflow: hidden;
+            margin: 20px;
+            border: 15px solid #fff;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image:hover img {
+            transform: scale(1.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .sub{
+            display: flex;
+            justify-content: space-around;
+            /* padding: 1rem; */
+            font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+        }
+        .img{
+            height: 30px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="name">
+            <h3>Noor-e-Falak <br> <span class="magic">Mehndi Magic</span></h3>
+            <div class="sub"> 
+                <a href="" ><img src="youtube.png" alt="" class="img"></a>
+                <h5>VM.Rokhaya Banu </h5>
+                
+                <p>Contact: 6305482113</p>
+                <a href="" ><img src="instagram.png" alt="" class="img"></a>
+               
+            </div>
+            </div>
+        
+        <div class="nav-buttons">
+            <a href="demo2.html" class="active" data-filter="all">All</a>
+            <a href="#" data-filter="ice-cream">Bridal</a>
+            <a href="#" data-filter="chocolate">Full Hand</a>
+            <a href="#" data-filter="cake">Half Hand</a>
+            <a href="#" data-filter="juice">Back Hand</a>
+            <a href="#" data-filter="sandwich">Foot</a>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <!-- Bridal Mehendi Images -->
+            <a href="/bridal/bdm1.jpg" class="image ice-cream">
+                <img src="/bridal/bdm1.jpg" alt="Bridal Mehendi">
+            </a>
+
+            <a href="/bridal/bdm2.jpg" class="image ice-cream">
+                <img src="/bridal/bdm2.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm3.jpg" class="image ice-cream">
+                <img src="/bridal/bdm3.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm4.jpg" class="image ice-cream">
+                <img src="/bridal/bdm4.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm5.jpg" class="image ice-cream">
+                <img src="/bridal/bdm5.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm6.jpg" class="image ice-cream">
+                <img src="/bridal/bdm6.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm7.jpg" class="image ice-cream">
+                <img src="/bridal/bdm7.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm8.jpg" class="image ice-cream">
+                <img src="/bridal/bdm8.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm9.jpg" class="image ice-cream">
+                <img src="/bridal/bdm9.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm10.jpg" class="image ice-cream">
+                <img src="/bridal/bdm10.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm11.jpg" class="image ice-cream">
+                <img src="/bridal/bdm11.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm12.jpg" class="image ice-cream">
+                <img src="/bridal/bdm12.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm13.jpg" class="image ice-cream">
+                <img src="/bridal/bdm13.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm14.jpg" class="image ice-cream">
+                <img src="/bridal/bdm14.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm15.jpg" class="image ice-cream">
+                <img src="/bridal/bdm15.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm16.jpg" class="image ice-cream">
+                <img src="/bridal/bdm16.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm17.jpg" class="image ice-cream">
+                <img src="/bridal/bdm17.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm18.jpg" class="image ice-cream">
+                <img src="/bridal/bdm18.jpg" alt="Bridal Mehendi">
+            </a>
+            <a href="/bridal/bdm19.jpg" class="image ice-cream">
+                <img src="/bridal/bdm19.jpg" alt="Bridal Mehendi">
+            </a>
+
+            <!-- Full Hand Images -->
+            <a href="full/fd1.jpg" class="image chocolate">
+                <img src="full/fd1.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd2.jpg" class="image chocolate">
+                <img src="full/fd2.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd3.jpg" class="image chocolate">
+                <img src="full/fd3.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd4.jpg" class="image chocolate">
+                <img src="full/fd4.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd5.jpg" class="image chocolate">
+                <img src="full/fd5.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd6.jpg" class="image chocolate">
+                <img src="full/fd6.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd7.jpg" class="image chocolate">
+                <img src="full/fd7.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd8.jpg" class="image chocolate">
+                <img src="full/fd8.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd9.jpg" class="image chocolate">
+                <img src="full/fd9.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd10.jpg" class="image chocolate">
+                <img src="full/fd10.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd11.jpg" class="image chocolate">
+                <img src="full/fd11.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd12.jpg" class="image chocolate">
+                <img src="full/fd12.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd13.jpg" class="image chocolate">
+                <img src="full/fd13.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd14.jpg" class="image chocolate">
+                <img src="full/fd14.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd15.jpg" class="image chocolate">
+                <img src="full/fd15.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd16.jpg" class="image chocolate">
+                <img src="full/fd16.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd17.jpg" class="image chocolate">
+                <img src="full/fd17.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd18.jpg" class="image chocolate">
+                <img src="full/fd18.jpg" alt="Full Hand">
+            </a>
+            <a href="full/fd19.jpg" class="image chocolate">
+                <img src="full/fd19.jpg" alt="Full Hand">
+            </a>
+
+
+            <!-- Half Hand Images -->
+            <!-- Half Hand Images from hf1 to hf35 -->
+<a href="half/hf1.jpg" class="image cake">
+    <img src="half/hf1.jpg" alt="Half Hand 1">
+</a>
+<a href="half/hf2.jpg" class="image cake">
+    <img src="half/hf2.jpg" alt="Half Hand 2">
+</a>
+<a href="half/hf3.jpg" class="image cake">
+    <img src="half/hf3.jpg" alt="Half Hand 3">
+</a>
+<a href="half/hf4.jpg" class="image cake">
+    <img src="half/hf4.jpg" alt="Half Hand 4">
+</a>
+<a href="half/hf5.jpg" class="image cake">
+    <img src="half/hf5.jpg" alt="Half Hand 5">
+</a>
+<a href="half/hf6.jpg" class="image cake">
+    <img src="half/hf6.jpg" alt="Half Hand 6">
+</a>
+<a href="half/hf7.jpg" class="image cake">
+    <img src="half/hf7.jpg" alt="Half Hand 7">
+</a>
+<a href="half/hf8.jpg" class="image cake">
+    <img src="half/hf8.jpg" alt="Half Hand 8">
+</a>
+<a href="half/hf9.jpg" class="image cake">
+    <img src="half/hf9.jpg" alt="Half Hand 9">
+</a>
+<a href="half/hf10.jpg" class="image cake">
+    <img src="half/hf10.jpg" alt="Half Hand 10">
+</a>
+<a href="half/hf11.jpg" class="image cake">
+    <img src="half/hf11.jpg" alt="Half Hand 11">
+</a>
+<a href="half/hf12.jpg" class="image cake">
+    <img src="half/hf12.jpg" alt="Half Hand 12">
+</a>
+<a href="half/hf13.jpg" class="image cake">
+    <img src="half/hf13.jpg" alt="Half Hand 13">
+</a>
+<a href="half/hf14.jpg" class="image cake">
+    <img src="half/hf14.jpg" alt="Half Hand 14">
+</a>
+<a href="half/hf15.jpg" class="image cake">
+    <img src="half/hf15.jpg" alt="Half Hand 15">
+</a>
+<a href="half/hf16.jpg" class="image cake">
+    <img src="half/hf16.jpg" alt="Half Hand 16">
+</a>
+<a href="half/hf17.jpg" class="image cake">
+    <img src="half/hf17.jpg" alt="Half Hand 17">
+</a>
+<a href="half/hf18.jpg" class="image cake">
+    <img src="half/hf18.jpg" alt="Half Hand 18">
+</a>
+<a href="half/hf19.jpg" class="image cake">
+    <img src="half/hf19.jpg" alt="Half Hand 19">
+</a>
+<a href="half/hf20.jpg" class="image cake">
+    <img src="half/hf20.jpg" alt="Half Hand 20">
+</a>
+<a href="half/hf21.jpg" class="image cake">
+    <img src="half/hf21.jpg" alt="Half Hand 21">
+</a>
+<a href="half/hf22.jpg" class="image cake">
+    <img src="half/hf22.jpg" alt="Half Hand 22">
+</a>
+<a href="half/hf23.jpg" class="image cake">
+    <img src="half/hf23.jpg" alt="Half Hand 23">
+</a>
+<a href="half/hf24.jpg" class="image cake">
+    <img src="half/hf24.jpg" alt="Half Hand 24">
+</a>
+<a href="half/hf25.jpg" class="image cake">
+    <img src="half/hf25.jpg" alt="Half Hand 25">
+</a>
+<a href="half/hf26.jpg" class="image cake">
+    <img src="half/hf26.jpg" alt="Half Hand 26">
+</a>
+<a href="half/hf27.jpg" class="image cake">
+    <img src="half/hf27.jpg" alt="Half Hand 27">
+</a>
+<a href="half/hf28.jpg" class="image cake">
+    <img src="half/hf28.jpg" alt="Half Hand 28">
+</a>
+<a href="half/hf29.jpg" class="image cake">
+    <img src="half/hf29.jpg" alt="Half Hand 29">
+</a>
+<a href="half/hf30.jpg" class="image cake">
+    <img src="half/hf30.jpg" alt="Half Hand 30">
+</a>
+<a href="half/hf31.jpg" class="image cake">
+    <img src="half/hf31.jpg" alt="Half Hand 31">
+</a>
+<a href="half/hf32.jpg" class="image cake">
+    <img src="half/hf32.jpg" alt="Half Hand 32">
+</a>
+<a href="half/hf33.jpg" class="image cake">
+    <img src="half/hf33.jpg" alt="Half Hand 33">
+</a>
+<a href="half/hf34.jpg" class="image cake">
+    <img src="half/hf34.jpg" alt="Half Hand 34">
+</a>
+<a href="half/hf35.jpg" class="image cake">
+    <img src="half/hf35.jpg" alt="Half Hand 35">
+</a>
+
+
+            <!-- Back Hand Images -->
+            <!-- Back Hand Images from bk1 to bk24 -->
+<a href="back/bk1.jpg" class="image juice">
+    <img src="back/bk1.jpg" alt="Back Hand 1">
+</a>
+<a href="back/bk2.jpg" class="image juice">
+    <img src="back/bk2.jpg" alt="Back Hand 2">
+</a>
+<a href="back/bk3.jpg" class="image juice">
+    <img src="back/bk3.jpg" alt="Back Hand 3">
+</a>
+<a href="back/bk4.jpg" class="image juice">
+    <img src="back/bk4.jpg" alt="Back Hand 4">
+</a>
+<a href="back/bk5.jpg" class="image juice">
+    <img src="back/bk5.jpg" alt="Back Hand 5">
+</a>
+<a href="back/bk6.jpg" class="image juice">
+    <img src="back/bk6.jpg" alt="Back Hand 6">
+</a>
+<a href="back/bk7.jpg" class="image juice">
+    <img src="back/bk7.jpg" alt="Back Hand 7">
+</a>
+<a href="back/bk8.jpg" class="image juice">
+    <img src="back/bk8.jpg" alt="Back Hand 8">
+</a>
+<a href="back/bk9.jpg" class="image juice">
+    <img src="back/bk9.jpg" alt="Back Hand 9">
+</a>
+<a href="back/bk10.jpg" class="image juice">
+    <img src="back/bk10.jpg" alt="Back Hand 10">
+</a>
+<a href="back/bk11.jpg" class="image juice">
+    <img src="back/bk11.jpg" alt="Back Hand 11">
+</a>
+<a href="back/bk12.jpg" class="image juice">
+    <img src="back/bk12.jpg" alt="Back Hand 12">
+</a>
+<a href="back/bk13.jpg" class="image juice">
+    <img src="back/bk13.jpg" alt="Back Hand 13">
+</a>
+<a href="back/bk14.jpg" class="image juice">
+    <img src="back/bk14.jpg" alt="Back Hand 14">
+</a>
+<a href="back/bk15.jpg" class="image juice">
+    <img src="back/bk15.jpg" alt="Back Hand 15">
+</a>
+<a href="back/bk16.jpg" class="image juice">
+    <img src="back/bk16.jpg" alt="Back Hand 16">
+</a>
+<a href="back/bk17.jpg" class="image juice">
+    <img src="back/bk17.jpg" alt="Back Hand 17">
+</a>
+<a href="back/bk18.jpg" class="image juice">
+    <img src="back/bk18.jpg" alt="Back Hand 18">
+</a>
+<a href="back/bk19.jpg" class="image juice">
+    <img src="back/bk19.jpg" alt="Back Hand 19">
+</a>
+<a href="back/bk20.jpg" class="image juice">
+    <img src="back/bk20.jpg" alt="Back Hand 20">
+</a>
+<a href="back/bk21.jpg" class="image juice">
+    <img src="back/bk21.jpg" alt="Back Hand 21">
+</a>
+<a href="back/bk22.jpg" class="image juice">
+    <img src="back/bk22.jpg" alt="Back Hand 22">
+</a>
+<a href="back/bk23.jpg" class="image juice">
+    <img src="back/bk23.jpg" alt="Back Hand 23">
+</a>
+<a href="back/bk24.jpg" class="image juice">
+    <img src="back/bk24.jpg" alt="Back Hand 24">
+</a>
+
+
+            <!-- Foot Images -->
+          <!-- Foot Images from ft1 to ft20 -->
+<a href="foot/ft1.jpg" class="image sandwich">
+    <img src="foot/ft1.jpg" alt="Foot 1">
+</a>
+<a href="foot/ft2.jpg" class="image sandwich">
+    <img src="foot/ft2.jpg" alt="Foot 2">
+</a>
+<a href="foot/ft3.jpg" class="image sandwich">
+    <img src="foot/ft3.jpg" alt="Foot 3">
+</a>
+<a href="foot/ft4.jpg" class="image sandwich">
+    <img src="foot/ft4.jpg" alt="Foot 4">
+</a>
+<a href="foot/ft5.jpg" class="image sandwich">
+    <img src="foot/ft5.jpg" alt="Foot 5">
+</a>
+<a href="foot/ft6.jpg" class="image sandwich">
+    <img src="foot/ft6.jpg" alt="Foot 6">
+</a>
+<a href="foot/ft7.jpg" class="image sandwich">
+    <img src="foot/ft7.jpg" alt="Foot 7">
+</a>
+<a href="foot/ft8.jpg" class="image sandwich">
+    <img src="foot/ft8.jpg" alt="Foot 8">
+</a>
+<a href="foot/ft9.jpg" class="image sandwich">
+    <img src="foot/ft9.jpg" alt="Foot 9">
+</a>
+<a href="foot/ft10.jpg" class="image sandwich">
+    <img src="foot/ft10.jpg" alt="Foot 10">
+</a>
+<a href="foot/ft11.jpg" class="image sandwich">
+    <img src="foot/ft11.jpg" alt="Foot 11">
+</a>
+<a href="foot/ft12.jpg" class="image sandwich">
+    <img src="foot/ft12.jpg" alt="Foot 12">
+</a>
+<a href="foot/ft13.jpg" class="image sandwich">
+    <img src="foot/ft13.jpg" alt="Foot 13">
+</a>
+<a href="foot/ft14.jpg" class="image sandwich">
+    <img src="foot/ft14.jpg" alt="Foot 14">
+</a>
+<a href="foot/ft15.jpg" class="image sandwich">
+    <img src="foot/ft15.jpg" alt="Foot 15">
+</a>
+<a href="foot/ft16.jpg" class="image sandwich">
+    <img src="foot/ft16.jpg" alt="Foot 16">
+</a>
+<a href="foot/ft17.jpg" class="image sandwich">
+    <img src="foot/ft17.jpg" alt="Foot 17">
+</a>
+<a href="foot/ft18.jpg" class="image sandwich">
+    <img src="foot/ft18.jpg" alt="Foot 18">
+</a>
+<a href="foot/ft19.jpg" class="image sandwich">
+    <img src="foot/ft19.jpg" alt="Foot 19">
+</a>
+<a href="foot/ft20.jpg" class="image sandwich">
+    <img src="foot/ft20.jpg" alt="Foot 20">
+</a>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>All rights reserved @ The Khadar Basha Creations 2024</p>
+    </footer>
+
+    <!-- jQuery and Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Filter images based on tab
+            $('.nav-buttons a').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                var filter = $(this).attr('data-filter');
+
+                if (filter === 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+            });
+
+            // Magnific popup for fullscreen image view
+            $('.gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
